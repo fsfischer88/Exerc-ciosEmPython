@@ -6,6 +6,8 @@ valor = int(input("Digite um número: "))
 
 if valor > 0:
     print("Este número é positivo:", valor)
+elif valor == 0:
+    print("Este número é Zero:", valor)
 else:
     print("Este número é negativo:", valor)
 
