@@ -1,16 +1,18 @@
 # 11 - Faça um Programa que leia um vetor de 10 caracteres, 
 # e diga quantas consoantes foram lidas. Imprima as consoantes.
 
-vogais = ["a","e","i,","o","u"]
+vogais = {"a","e","i","o","u"}
 consoantes = []
-i = 10
+contVogais = 0
+x = 1
 
-    
-for x in consoantes:
+
+while x <= 10:   
     letras = input("Digite uma letra: ")
-    if letras != vogais:
-        consoantes.append(letras)
-    else:
-        print("Você não digitou nenhuma consoante")
-    i -= 1
-print(consoantes)
+    x += 1
+    consoantes.append(letras)
+      
+    if letras in vogais:
+        contVogais += 1 
+    print("Consoantes: ", (len(consoantes)) - contVogais)
+
